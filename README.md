@@ -1,37 +1,27 @@
-# 📈 Análise de Mercado Financeiro com Estratégia de Médias Móveis
+# 📊 Análises de Mercado Financeiro com Python
 
-Este projeto em Python realiza uma análise de desempenho da ação **ALPA4.SA** (Alpargatas) utilizando uma estratégia simples baseada em **médias móveis**, comparando-a com o retorno da própria ação e com o **Ibovespa (índice Bovespa)**.
+Este repositório reúne códigos e estudos em Python voltados para a análise de mercados financeiros. Os notebooks e scripts presentes aqui exploram diferentes abordagens, desde manipulação e visualização de dados até estratégias quantitativas simples.
 
 ## ⚙️ Tecnologias e Bibliotecas Utilizadas
 
-- [yFinance](https://pypi.org/project/yfinance/) `0.2.58` - para obtenção de dados históricos do mercado financeiro.
-- [Pandas](https://pandas.pydata.org/) - para manipulação de dados.
-- [NumPy](https://numpy.org/) - para cálculos vetorizados.
-- [Matplotlib](https://matplotlib.org/) - para visualização dos resultados.
-- [mplcyberpunk](https://pypi.org/project/mplcyberpunk/) - para estilização dos gráficos com visual futurista.
+Algumas das bibliotecas comumente utilizadas nos projetos deste repositório:
 
-## 📊 Estratégia
+- `pandas` – manipulação de dados
+- `numpy` – cálculos e vetorização
+- `matplotlib` – visualização de gráficos
+- `yfinance` – extração de dados financeiros históricos
+- `mplcyberpunk` – estilização alternativa de gráficos (visual futurista)
 
-A lógica da estratégia é baseada no cruzamento de duas médias móveis:
+## 📈 Exemplos de abordagens implementadas
 
-- **Média Rápida:** 7 dias
-- **Média Lenta:** 40 dias
+- Coleta de dados históricos de ações e índices
+- Cálculo de indicadores técnicos (como médias móveis)
+- Visualização de retornos acumulados
+- Simulação de estratégias baseadas em sinais técnicos
 
-### Regras:
+## ▶️ Como executar
 
-- Se a média rápida ultrapassa a média lenta → **compra (posição = 1)**
-- Se a média rápida fica abaixo da média lenta → **venda (posição = -1)**
-
-Os retornos são calculados e acumulados tanto para:
-- A estratégia
-- A própria ação
-- O índice Ibovespa
-
-Esses dados são plotados em um gráfico comparativo.
-
-## 📦 Instalação
-
-Clone o repositório e instale os pacotes necessários:
+Clone este repositório e instale os pacotes necessários com:
 
 ```bash
 pip install yfinance==0.2.58
